@@ -7,12 +7,20 @@ const {
     getUserById,
     getUserActivityById,
     getUserAverageSession,
-    getUserPerformance
+    getUserPerformance,
+    getUsers
 } = require('./models')
 
 const {
     handleNoUserData
 } = require('./middleware')
+
+
+router.get('/user/all', (req, res) => {
+    const usersData = getUsers()
+
+    return handleNoUserData(res, usersData)
+})
 
 
 router.get('/user/:id', (req, res) => {

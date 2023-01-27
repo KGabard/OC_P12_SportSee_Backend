@@ -6,6 +6,11 @@ const {
 } = require('./data')
 
 /**
+ * @description Retrieve all users main info (first name, last name, today score)
+ */
+const getUsers = () => USER_MAIN_DATA
+
+/**
  * @description Retrieve the main user info (first name, last name, today score)
  * @param {number} id 
  */
@@ -38,6 +43,7 @@ const getUserPerformance = id => USER_PERFORMANCE
     .shift()
 
 module.exports = {
+    getUsers,
     getUserById,
     getUserActivityById,
     getUserAverageSession,
