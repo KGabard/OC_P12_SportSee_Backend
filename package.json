@@ -1,5 +1,5 @@
 {
-  "name": "OC_P12_SportSee_Backend",
+  "name": "oc-p12-sportsee-backend",
   "version": "1.0.0",
   "description": "Backend for the 12th project of the path Front-end Developper at Openclassrooms",
   "main": "index/app.js",
